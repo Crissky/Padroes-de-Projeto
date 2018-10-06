@@ -1,2 +1,2 @@
-# Padrões de Projeto
-## Repositório destinado a exemplos de Padrões de Projeto (Design Pattern) em Java.
+# Padrões de Projeto (Design Pattern)
+## Repositório destinado a exemplos de Padrões de Projeto em Java.
