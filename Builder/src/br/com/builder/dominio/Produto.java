@@ -26,5 +26,14 @@ public class Produto {
 	public void setValor(BigDecimal valor) {
 		this.valor = valor;
 	}
+	public void setValor(int valor) {
+		this.setValor(new BigDecimal(valor));
+	}
+	public void setValor(float valor) {
+		this.setValor(new BigDecimal(valor));
+	}
+	public void setValor(double valor) {
+		this.setValor(new BigDecimal(valor));
+	}
 	
 }

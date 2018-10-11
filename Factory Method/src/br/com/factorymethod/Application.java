@@ -11,7 +11,7 @@ public class Application {
 		
 		String texto = JOptionPane.showInputDialog(null);
 		
-		Mensagem mensagem = MensagemFactory.getMensagem(1);
+		Mensagem mensagem = MensagemFactory.getMensagem(MensagemFactory.EMAIL);
 		mensagem.enviar(texto);
 		
 	}

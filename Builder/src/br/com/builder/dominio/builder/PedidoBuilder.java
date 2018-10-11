@@ -2,6 +2,8 @@ package br.com.builder.dominio.builder;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import br.com.builder.dominio.Cliente;
 import br.com.builder.dominio.Pedido;
@@ -28,6 +30,10 @@ public class PedidoBuilder {
 		cliente.setNome(nome);
 		cliente.setTelefone(telefone);
 		
+		return this.setCliente(cliente);
+	}
+	
+	public PedidoBuilder setCliente(Cliente cliente) {
 		instancia.setCliente(cliente);
 		
 		return this;
@@ -38,6 +44,10 @@ public class PedidoBuilder {
 		vendedor.setCodigo(codigo);
 		vendedor.setNome(nome);
 		
+		return this.setVendedor(vendedor);
+	}
+	
+	public PedidoBuilder setVendedor(Vendedor vendedor) {
 		instancia.setVendedor(vendedor);
 		
 		return this;
@@ -49,13 +59,29 @@ public class PedidoBuilder {
 		produto.setQuantidade(quantidade);
 		produto.setValor(valor);
 		
+		List<Produto> listaProdutos = new ArrayList<>( Arrays.asList( produto ) );
+		
+		return this.setProduto( listaProdutos );
+	}
+	
+	public PedidoBuilder setProduto(Produto... produtos) {
+		List<Produto> listaProdutos = new ArrayList<>( Arrays.asList( produtos ) );
+		
+		return this.setProduto( listaProdutos );
+	}
+	
+	public PedidoBuilder setProduto(List<Produto> listaProdutos) {
+		iniciarListaProdutos();
+		
+		instancia.getProdutos().addAll(listaProdutos);
+		
+		return this;
+	}
+	
+	private void iniciarListaProdutos() {
 		if(instancia.getProdutos() == null) {
 			instancia.setProdutos(new ArrayList<>());
 		}
-		
-		instancia.getProdutos().add(produto);
-		
-		return this;
 	}
 	
 	public Pedido builder() {
