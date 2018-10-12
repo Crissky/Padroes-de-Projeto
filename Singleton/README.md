@@ -9,5 +9,5 @@ Alguns projetos necessitam que algumas classes tenham apenas uma instância. Por
 [Singleton 2](https://github.com/Crissky/Padroes-de-Projeto/blob/master/Singleton/src/br/com/singleton/dominio/GerenciadorImpressao2.java)
 - Está segunda implementação visa resolver o problema de concorrência, pois a instancia é carregada junto com a classe (em uma **única linha**), além de exigir menos linhas em sua implementação.
 
-<br><br><br>
+<br><br>
 FONTE: [Wikipedia](https://en.wikipedia.org/wiki/Singleton_pattern)
