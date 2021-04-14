@@ -37,10 +37,9 @@ public class Produto {
 	}
 	
 	public double getValorTotal(double imposto) {
-		BigDecimal valorTotal = this.valor.add(new BigDecimal(imposto));
+		BigDecimal valorTotal = this.valor.add(this.valor.multiply(new BigDecimal(imposto)));
 		valorTotal = valorTotal.multiply(new BigDecimal(this.quantidade));
 		
 		return valorTotal.doubleValue();
-	}
-	
+	}	
 }
