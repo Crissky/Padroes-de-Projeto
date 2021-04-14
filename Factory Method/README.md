@@ -12,5 +12,7 @@ Criar um objeto geralmente requer processos complexos não apropriados para incl
 - Inicialização mais lenta (Pois precisa instanciar no HashMap **TODOS os objetos** que são opções de retorno da Factory)
 - Tempo do método **get** será **O(1)**, pois é um hash.
 
+![Factory Method](https://brizeno.files.wordpress.com/2011/09/factory-method.png)
+
 <br><br>
 FONTE: [Wikipedia](https://en.wikipedia.org/wiki/Factory_method_pattern)
