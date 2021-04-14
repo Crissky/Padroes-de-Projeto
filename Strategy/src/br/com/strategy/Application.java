@@ -1,4 +1,4 @@
-package br.com.strategy.dominio;
+package br.com.strategy;
 
 import br.com.strategy.dominio.strategy.ContextMath;
 import br.com.strategy.dominio.strategy.operacoes.Somar;
