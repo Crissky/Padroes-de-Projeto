@@ -8,4 +8,6 @@ A implementação da solução para esse problema pode ser realizada através de
 
 ![Um exemplo de classe UML e diagrama de sequência para o padrão de design Builder.](https://upload.wikimedia.org/wikipedia/commons/8/87/W3sDesign_Builder_Design_Pattern_UML.jpg)
 
+<br>
+
 FONTE: [Wikipedia](https://en.wikipedia.org/wiki/Builder_pattern)
