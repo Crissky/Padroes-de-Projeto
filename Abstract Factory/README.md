@@ -9,4 +9,6 @@ Em uso normal, o software cliente cria uma implementação concreta da fábrica 
 - ### Contras
   - No entanto, o emprego deste padrão, como acontece com outros padrões semelhantes, pode resultar em uma complexidade desnecessária e trabalho extra no início do código. Além disso, os níveis mais elevados de abstração podem resultar em sistemas que são mais difíceis de manter. A essência do padrão Abstract Factory é fornecer uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas classes concretas.
 
+<br>
+
 FONTE: [Wikipedia](https://en.wikipedia.org/wiki/Abstract_factory_pattern)
